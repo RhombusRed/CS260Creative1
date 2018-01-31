@@ -1,10 +1,19 @@
+/*  Notes  */
+/*
+#1c681d Dark Green
+
+
+
+*/
+
 /*  Global Stuff  */
+
 * {
     margin: 0;
     padding: 0;  }
 
 html {
-    background-color: black;
+    background-color: darkgreen;
     height: 100%;  }
 
 body {
@@ -16,23 +25,22 @@ body {
 nav {
     width: 100%;
     height:47px;
-    position: absolute;
-    background-color: black;  }
+    background-color: black;
+    position: absolute;  }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    position: inherit; /* Make it stick, even on scroll */
-    background-color: black;  }
+    position: inherit; /* Make it stick, even on scroll */  }
 
 nav li {
     float: left;  }
 
 nav li a {
     display: inline-block;
-    color: red;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;  }
@@ -51,42 +59,28 @@ nav a:hover {
 /*  Body Stuff  */
 main {
     padding-top: 47px;
-    background-color: black;
     color: red;
     padding-bottom:47px;  }
 
 section {
     display: flex;  }
 
-.reviews {
-    background-color: #333;
-    border-radius: 5px;
-    margin: 0 5%;
-    padding: 67px 20px;  }
-
-.reviews p {
-    font-size: 150%;  }
-
-.reviews hr {
-    margin: 5px 0;  }
-
-.grid-wrapper {
+.character-grid-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;/*Pic,Name,Race,Class*/
     margin: 0 10px;
-    background-color: black;
     grid-column-gap: 8px;
-    grid-row-gap: 8px;
+    grid-row-gap: 15px;
+    Color: white;
     z-index: 1;  }
 
-.grid-wrapper img {
-    max-width: 100%;
-    width: 100%;  }
+.character-grid-wrapper img {
+    max-height: 200px;
+    width: auto;  }
 
 .about-grid-wrapper {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    background-color: black;
     font-size: 200%;
     margin: 0 10px;
     grid-column-gap: 1px;
@@ -98,35 +92,49 @@ section {
     margin: 0 auto;  }
 
 .about-grid-wrapper p {
-    padding: 0 20px;
+    padding: 10px 20px;
     border-radius: 5px;
-    background-color: #333;  }
+    background-color: #0f3f0f;
+    color: #ccc;  }
 
-.overlay-container {
-    position: relative;
-    text-align: center;
-    color: white;
-    background-color: white;  }
+.about-grid-wrapper a {
+    text-decoration: none;
+    color: black;  }
 
-.overlay-container img {
-    display: block;
-    opacity: 0.7;
+.about-grid-wrapper a:hover {
+    color: green;  }
+
+.mainLogo {
+    margin: 0 15%;
     padding: 0;
-    height: auto;
-    width: 100%;
-    transform: rotate(0);  }
+    width: 70%;
+    transform: rotate(0);
+    z-index: -1;  }
 
-.overlay-container h1 {
-    margin: 0;  }
+.index-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-column-gap: 15px; 
+    grid-row-gap: 15px;
+    margin: 10px 8%;
+    padding: 20px 0;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: red;
+    border-radius: 5px;  }
 
-.overlay {
-    position: absolute;
-    color: white;
-    font-size: 300%;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);  }
+.index-wrapper:hover {
+    background-color: darkred;
+    color: white;  }
 
+.index-wrapper h1 {
+    font-size: 200%;  }
+
+.index-wrapper p {
+    text-align: left;
+    color: white;  }
+    
 /*  Contact Form  */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -169,7 +177,6 @@ input[type=submit]:hover {
 /*  Footer Stuff  */
 footer {
     text-align: center;
-    background-color: black;
     position: absolute;
     margin-top: -47px;
     height: 47px;
@@ -183,6 +190,9 @@ footer hr {
     border-width: 0;
     background-color: darkgray;  }
 
-footer a{
+footer a {
     text-decoration: none;
-    color: red;  }
+    color: white;  }
+
+footer a:hover {
+    color: #777;  }
