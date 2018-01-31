@@ -1,6 +1,6 @@
 /*  Notes  */
 /*
-#1c681d Dark Green
+#0f3f0f Dark Green
 
 
 
@@ -167,10 +167,10 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: darkred;  }
 
-.contact-container {
+.create-container {
     max-width: 70%;
     border-radius: 5px;
-    background-color: #333;
+    background-color: #0f3f0f;
     padding: 20px;
     margin: 0 15%;  }
 
