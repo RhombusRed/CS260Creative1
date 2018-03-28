@@ -11,7 +11,7 @@
         padding: 0;  }
 
     html {
-        background-color: darkgreen;
+        background-color: #555;
         height: 100%;  }
 
     body {
@@ -92,7 +92,7 @@
     .about-grid-wrapper p {
         padding: 10px 20px;
         border-radius: 5px;
-        background-color: #0f3f0f;
+        background-color: #333;
         color: #ccc;  }
 
     .about-grid-wrapper a {
@@ -100,7 +100,7 @@
         color: black;  }
 
     .about-grid-wrapper a:hover {
-        color: green;  }
+        color: red;  }
 
     .mainLogo {
         margin: 0 15%;
@@ -170,7 +170,7 @@
     .create-container {
         max-width: 70%;
         border-radius: 5px;
-        background-color: #0f3f0f;
+        background-color: #333;
         padding: 20px;
         margin: 0 15%;  }
 
